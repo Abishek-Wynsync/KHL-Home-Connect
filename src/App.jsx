@@ -143,7 +143,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 // Pages
-import Home from "./pages/home"; // ✅ Fixed casing
+import Home from "./pages/Home";
 import About from "./pages/AboutUs/About";
 import Products from "./pages/Products/Products";
 import Technologies from "./pages/Technologies/Technologies";
