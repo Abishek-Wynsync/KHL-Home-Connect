@@ -7,6 +7,8 @@ import AboutWhyChoose from "../../components/about/AboutWhyChoose";
 import AboutLeadership from "../../components/about/AboutLeadership";
 import AboutTeam from "../../components/about/AboutTeam";
 import AboutCTA from "../../components/about/AboutCTA";
+import AboutVideo from "../../components/about/AboutVideo";
+
 
 export default function About() {
   return (
@@ -18,6 +20,12 @@ export default function About() {
       <div className="bg-brand-blue/[0.03]">
         <AboutWhoWeAre />
       </div>
+
+            <div className="bg-white">
+        <AboutVideo />
+      </div>
+
+
 
       {/* 02. White Section */}
       <div className="bg-white">

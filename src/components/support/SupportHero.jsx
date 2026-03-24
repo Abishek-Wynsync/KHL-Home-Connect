@@ -250,7 +250,7 @@ import React, { useEffect, useRef, useState } from 'react';
 export default function SupportHero() {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
-  const videoUrl = "https://res.cloudinary.com/dsa0chszi/video/upload/v1774338498/ServicePromo1_jgrnlu.mp4";
+  const videoUrl = "https://res.cloudinary.com/dsa0chszi/video/upload/v1774353327/Bosch_Final_fvajhk.mp4";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
