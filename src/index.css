@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #003D7C;
+  --color-brand-silver: #C0C0C0;
+  --color-brand-dark: #0D1B2A;
+  --color-brand-bg: #F8F9FA;
+  
+  --font-heading: "Raleway", sans-serif;
+  --font-accent: "Playfair Display", serif;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
