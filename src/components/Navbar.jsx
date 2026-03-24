@@ -341,16 +341,21 @@ export default function Navbar() {
     >
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex justify-between items-center">
         
-        {/* Branding: Logo + KHL Home Connect */}
-        <Link to="/" className="flex items-center gap-3 md:gap-4 group z-[110]">
-          
-          {/* LOGO CONTAINER */}
-          <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-transform group-hover:scale-105">
-            <img 
-              src={logo} // Replace with your actual logo path (e.g., /assets/logo.svg)
-              alt="KHL Logo" 
-              className="w-full h-full object-contain"
-            />
+        {/* --- In your Navbar Component --- */}
+
+<div className="hidden lg:flex items-center gap-6">
+  <Link
+    to="/contact-visit#enquiry" // Added the hash here
+    className="px-8 py-3 bg-brand-blue text-white text-[10px] uppercase tracking-[0.25em] font-bold transition-all duration-500 hover:bg-brand-dark shadow-lg active:scale-95"
+  >
+    Enquire Now
+  </Link>
+</div>
+        {/* 🔷 Brand Logo Section */}
+        <Link to="/" className="flex items-center gap-4 group">
+          <div className="relative overflow-hidden w-10 h-10 border border-brand-blue/30 flex items-center justify-center bg-white transition-all duration-500 group-hover:border-brand-blue">
+            <span className="text-brand-blue font-light text-xl">H</span>
+            <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
           </div>
 
           <div className="flex flex-col">

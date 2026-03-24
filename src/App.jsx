@@ -143,7 +143,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 // Pages
-import Home from "./pages/Home";
+import Home from "./pages/home/home";
 import About from "./pages/AboutUs/About";
 import Products from "./pages/Products/Products";
 import Technologies from "./pages/Technologies/Technologies";
@@ -167,9 +167,7 @@ function App() {
             <Route path="/technologies" element={<Technologies />} />
             <Route path="/experience-support" element={<ExperienceSupport />} />
             <Route path="/contact-visit" element={<ContactVisit />} />
-
-            {/* 🔥 Optional: 404 Page */}
-            <Route path="*" element={<h1 className="text-center py-40">404 - Page Not Found</h1>} />
+            
           </Routes>
         </main>
 

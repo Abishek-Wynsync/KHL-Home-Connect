@@ -454,40 +454,27 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* 🛠️ Liaison */}
-          <div className="lg:col-span-2 space-y-8">
-            <h3 className="text-[11px] uppercase tracking-[0.5em] font-black text-white/40">Liaison</h3>
-            <ul className="space-y-4">
-              <li><Link to="/experience-support" className="text-gray-400 text-xs hover:text-white transition-colors">Experience & Support</Link></li>
-              <li><Link to="/contact-visit" className="text-gray-400 text-xs hover:text-white transition-colors">Contact & Visit</Link></li>
-              <li><a href="mailto:khlprivatelimited@gmail.com" className="text-gray-400 text-xs hover:text-white transition-colors">Book Store Visit</a></li>
-            </ul>
-          </div>
+          {/* 🛠️ Support (2 Cols) */}
+          {/* Update the Liaison section */}
+<ul className="space-y-4">
+  <li><Link to="/experience-support" className="...">Experience & Support</Link></li>
+  {/* Link specifically to the enquiry form or booking section */}
+  <li><Link to="/contact-visit#enquiry" className="...">Inquiry Form</Link></li>
+  <li><Link to="/contact-visit#booking" className="...">Book a Store Visit</Link></li>
+</ul>
 
-          {/* 📍 Location & Contact */}
-          <div className="sm:col-span-2 lg:col-span-4 space-y-8">
-            <h3 className="text-[11px] uppercase tracking-[0.5em] font-black text-white/40">The Flagship</h3>
-            <div className="space-y-6">
-              <p className="text-gray-400 text-sm leading-relaxed font-light">
-                No.4, Anand Garden, 100ft Bypass Road,<br /> 
-                <span className="text-white font-medium">Velachery, Chennai – 600042</span>
-              </p>
-              
-              <div className="space-y-4">
-                <a href="tel:7358619429" className="group flex items-center gap-4 text-white hover:text-brand-blue transition-colors">
-                  <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:border-brand-blue transition-colors">
-                    <span className="text-[10px]">📞</span>
-                  </div>
-                  <span className="text-sm font-bold tracking-widest">+91 73586 19429</span>
-                </a>
-              </div>
+          {/* 📍 Location & Contact (4 Cols) */}
+          <div className="lg:col-span-4 space-y-6">
+  <h3 className="...">Showroom</h3>
+  <div className="space-y-4 text-sm font-light text-gray-400">
+    <Link to="/contact-visit#map" className="hover:text-white transition-all block italic">
+      No.4, Ahand Garden, 100ft Bypass Road,<br /> 
+      Velachery, Chennai – 600042
+    </Link>
+    {/* ... rest of contact info */}
+  </div>
+</div>
 
-              <div className="inline-flex items-center gap-3 px-5 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] uppercase tracking-[0.2em] hover:bg-white/10 transition-colors cursor-default">
-                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.5)]"></span>
-                Experience Center Open
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* 🔻 Enhanced Bottom Bar */}
