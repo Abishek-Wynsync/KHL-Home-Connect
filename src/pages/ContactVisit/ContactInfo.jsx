@@ -1,16 +1,16 @@
 import React from "react";
 import { MapPin, Phone, MessageSquare, Mail, ExternalLink } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
 
 export default function ContactInfo() {
   const contactMethods = [
-    {
-      icon: <Phone size={20} />,
+    { 
+      icon: <Phone size={20} />, 
       label: "Call Our Consultants",
       value: "+91 98765 43210",
       action: "tel:+919876543210",
       primary: true,
-    },
+    }, 
     {
       icon: <MessageSquare size={20} />,
       label: "WhatsApp Support",
@@ -18,7 +18,7 @@ export default function ContactInfo() {
       action: "https://wa.me/919876543210",
       primary: false,
     },
-    {
+    {  
       icon: <Mail size={20} />,
       label: "Email Enquiries",
       value: "velachery.bosch@hc.com",
@@ -27,7 +27,7 @@ export default function ContactInfo() {
     },
   ];
 
-  return (
+  return (  
     <section className="flex-grow py-10 px-6 bg-[#f5f7fa] border-y border-gray-100 font-serif text-[#003B73] relative">
       <div className="max-w-md mx-auto">
         

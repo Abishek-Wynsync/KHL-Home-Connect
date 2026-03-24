@@ -101,11 +101,7 @@ export default function FeaturedProducts() {
 
         {/* --- View All Footer --- */}
         <div className="mt-20 text-center">
-           <button className="text-sm font-sans font-bold text-slate-400 uppercase tracking-[0.3em] hover:text-[#003B73] transition-colors flex items-center gap-4 mx-auto group">
-             <span className="h-[1px] w-8 bg-slate-200 group-hover:w-12 group-hover:bg-[#003B73] transition-all"></span>
-             View Entire Collection
-             <span className="h-[1px] w-8 bg-slate-200 group-hover:w-12 group-hover:bg-[#003B73] transition-all"></span>
-           </button>
+          
         </div>
       </div>
     </section>

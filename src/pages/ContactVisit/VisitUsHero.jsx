@@ -57,14 +57,19 @@ export default function VisitUsHero() {
             
             {/* Direct Map Button */}
             <a
-              href="https://maps.google.com" // Update your real map link
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative px-10 py-4 bg-white text-[#001b35] rounded-full font-bold overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-2xl flex items-center gap-2"
-            >
-            </a>
+  href="https://www.google.com/maps/dir/?api=1&destination=Surmara+Enterprises+Velachery+Chennai"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group relative px-10 py-4 bg-white text-[#001b35] rounded-full font-bold overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-2xl flex items-center gap-2"
+>
+  <span className="relative z-10 flex items-center gap-2 uppercase tracking-widest text-xs">
+    Get Directions <MapPin size={16} className="group-hover:animate-bounce" />
+  </span>
 
-        
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-200/50 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+</a>
+
+            {/* Secondary Hollow Button */}
             
           </div>
         </motion.div>

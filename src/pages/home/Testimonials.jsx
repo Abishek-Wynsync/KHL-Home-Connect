@@ -119,12 +119,7 @@ export default function Testimonials() {
 
         {/* Bottom Verification Text */}
         <div className="mt-20 text-center">
-          <p className="text-slate-400 text-sm font-serif">
-            Verified Customer Experiences • 
-            <span className="text-[#0a4275] font-serif ml-2 cursor-pointer hover:underline underline-offset-4">
-              View All Testimonials
-            </span>
-          </p>
+        
         </div>
       </div>
     </section>

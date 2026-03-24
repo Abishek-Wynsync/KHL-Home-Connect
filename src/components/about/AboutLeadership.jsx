@@ -72,7 +72,7 @@
 
 import React from 'react';
 // Import your assets
-import hero from "../../assets/hero.png";
+import hero from "../../assets/logo.webp";
 import logo from "../../assets/logo.webp";
 
 export default function AboutLeadership() {

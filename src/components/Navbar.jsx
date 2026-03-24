@@ -1,5 +1,5 @@
 //     // import { useState, useEffect } from "react";
-//     // import { Link, useLocation } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
 
 //     // export default function Navbar() {
 //     // const [menuOpen, setMenuOpen] = useState(false);
@@ -87,9 +87,9 @@
 //     //         className="xl:hidden flex flex-col items-end gap-2 group p-2 z-[110]"
 //     //         onClick={() => setMenuOpen(!menuOpen)}
 //     //         >
-//     //         <span className={`h-[1px] bg-brand-blue transition-all duration-500 ${menuOpen ? "w-8 rotate-45 translate-y-[4.5px]" : "w-8"}`} />
-//     //         <span className={`h-[1px] bg-brand-blue transition-all duration-500 ${menuOpen ? "opacity-0" : "w-5 group-hover:w-8"}`} />
-//     //         <span className={`h-[1px] bg-brand-blue transition-all duration-500 ${menuOpen ? "w-8 -rotate-45 -translate-y-[4.5px]" : "w-3 group-hover:w-8"}`} />
+//     //         <span className={h-[1px] bg-brand-blue transition-all duration-500 ${menuOpen ? "w-8 rotate-45 translate-y-[4.5px]" : "w-8"}} />
+//     //         <span className={h-[1px] bg-brand-blue transition-all duration-500 ${menuOpen ? "opacity-0" : "w-5 group-hover:w-8"}} />
+//     //         <span className={h-[1px] bg-brand-blue transition-all duration-500 ${menuOpen ? "w-8 -rotate-45 -translate-y-[4.5px]" : "w-3 group-hover:w-8"}} />
 //     //         </button>
 //     //     </div>
 
@@ -103,7 +103,7 @@
 //     //             key={link.name}
 //     //             to={link.path}
 //     //             onClick={() => setMenuOpen(false)}
-//     //             style={{ transitionDelay: `${i * 100}ms` }}
+//     //             style={{ transitionDelay: ${i * 100}ms }}
 //     //             className={`text-2xl md:text-4xl font-serif italic tracking-[0.1em] text-brand-blue transition-all duration-700 transform ${
 //     //                 menuOpen ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
 //     //             }`}
@@ -112,7 +112,7 @@
 //     //             </Link>
 //     //         ))}
             
-//     //         <div className={`transition-all duration-1000 delay-[700ms] ${menuOpen ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}>
+//     //         <div className={transition-all duration-1000 delay-[700ms] ${menuOpen ? "opacity-100 scale-100" : "opacity-0 scale-90"}}>
 //     //             <span className="text-brand-silver font-serif italic text-xl">Live life</span>
 //     //         </div>
 //     //         </div>
@@ -210,9 +210,9 @@
 // //           className="xl:hidden flex flex-col items-end gap-1.5 p-2 z-[110]"
 // //           onClick={() => setMenuOpen(!menuOpen)}
 // //         >
-// //           <span className={`h-[2px] bg-brand-blue transition-all duration-300 ${menuOpen ? "w-8 rotate-45 translate-y-[5px]" : "w-8"}`} />
-// //           <span className={`h-[2px] bg-brand-blue transition-all duration-300 ${menuOpen ? "opacity-0" : "w-6"}`} />
-// //           <span className={`h-[2px] bg-brand-blue transition-all duration-300 ${menuOpen ? "w-8 -rotate-45 -translate-y-[5px]" : "w-4"}`} />
+// //           <span className={h-[2px] bg-brand-blue transition-all duration-300 ${menuOpen ? "w-8 rotate-45 translate-y-[5px]" : "w-8"}} />
+// //           <span className={h-[2px] bg-brand-blue transition-all duration-300 ${menuOpen ? "opacity-0" : "w-6"}} />
+// //           <span className={h-[2px] bg-brand-blue transition-all duration-300 ${menuOpen ? "w-8 -rotate-45 -translate-y-[5px]" : "w-4"}} />
 // //         </button>
 // //       </div>
 
@@ -279,7 +279,7 @@
 //                     {["Home", "About", "Products", "Technologies", "Support", "Visit Us"].map((item) => (
 //                         <Link 
 //                             key={item} 
-//                             to={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
+//                             to={item === "Home" ? "/" : /${item.toLowerCase().replace(" ", "-")}}
 //                             className={`text-[11px] uppercase tracking-[0.2em] font-bold transition-colors ${
 //                                 location.pathname.includes(item.toLowerCase().replace(" ", "-"))
 //                                 ? "text-brand-blue border-b-2 border-brand-blue"
@@ -328,7 +328,7 @@ export default function Navbar() {
     { name: "Products", path: "/products" },
     { name: "Technologies", path: "/technologies" },
     { name: "Support", path: "/experience-support" },
-    { name: "Visit Us", path: "/contact-visit" },
+    { name: "Visit Us", path: "/visit-us" },
   ];
 
   return (
@@ -341,21 +341,16 @@ export default function Navbar() {
     >
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex justify-between items-center">
         
-        {/* --- In your Navbar Component --- */}
-
-<div className="hidden lg:flex items-center gap-6">
-  <Link
-    to="/contact-visit#enquiry" // Added the hash here
-    className="px-8 py-3 bg-brand-blue text-white text-[10px] uppercase tracking-[0.25em] font-bold transition-all duration-500 hover:bg-brand-dark shadow-lg active:scale-95"
-  >
-    Enquire Now
-  </Link>
-</div>
-        {/* 🔷 Brand Logo Section */}
-        <Link to="/" className="flex items-center gap-4 group">
-          <div className="relative overflow-hidden w-10 h-10 border border-brand-blue/30 flex items-center justify-center bg-white transition-all duration-500 group-hover:border-brand-blue">
-            <span className="text-brand-blue font-light text-xl">H</span>
-            <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+        {/* Branding: Logo + KHL Home Connect */}
+        <Link to="/" className="flex items-center gap-3 md:gap-4 group z-[110]">
+          
+          {/* LOGO CONTAINER */}
+          <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-transform group-hover:scale-105">
+            <img 
+              src={logo} // Replace with your actual logo path (e.g., /assets/logo.svg)
+              alt="KHL Logo" 
+              className="w-full h-full object-contain"
+            />
           </div>
 
           <div className="flex flex-col">

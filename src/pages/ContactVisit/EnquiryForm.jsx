@@ -9,7 +9,7 @@ export default function EnquiryForm() {
   const brandNavy = "#003B73";
 
   return (
-   <section id="enquiry" className="flex-grow py-20 px-6 bg-[#f8fafc] border-y border-slate-200 font-serif text-[#003B73] relative overflow-hidden">
+   <section  className="flex-grow py-20 px-6 bg-[#f8fafc] border-y border-slate-200 font-serif text-[#003B73] relative overflow-hidden">
       {/* Background Decorative "Oval" - Logo Reference */}
       <div className="absolute -right-20 -bottom-20 w-96 h-96 border-[40px] border-[#003B73]/5 rounded-full pointer-events-none" />
       

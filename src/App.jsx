@@ -166,7 +166,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/technologies" element={<Technologies />} />
             <Route path="/experience-support" element={<ExperienceSupport />} />
-            <Route path="/contact-visit" element={<ContactVisit />} />
+            <Route path="/visit-us" element={<ContactVisit />} />
             
           </Routes>
         </main>
