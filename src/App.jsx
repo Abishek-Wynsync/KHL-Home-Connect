@@ -149,12 +149,13 @@ import Products from "./pages/Products/Products";
 import Technologies from "./pages/Technologies/Technologies";
 import ExperienceSupport from "./pages/ExperienceSupport/ExperienceSupport";
 import ContactVisit from "./pages/ContactVisit/ContactVisit";
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
-        
+        <ScrollToTop />
         {/* 🔝 Navbar */}
         <Navbar />
 

@@ -280,11 +280,136 @@
 // }
 
 
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+// import { MapPin, ArrowUpRight, PlayCircle } from 'lucide-react';
+// // Replace with your actual showroom path
+// import VelacheryShowroomImg from '../../assets/logo.webp'; 
+
+// export default function AboutFlagship() {
+//   const features = [
+//     { title: "Culinary Studio", desc: "Built-in kitchen setups" },
+//     { title: "Fabric Care Zone", desc: "Live washing demonstrations" },
+//     { title: "Hydro-Lab", desc: "Dishwasher trial zones" },
+//     { title: "Design Atelier", desc: "Expert consultation" }
+//   ];
+
+//   return (
+//     <section className="relative py-24 lg:py-40 bg-[#f8fafd] overflow-hidden">
+//       {/* 🧩 Decorative background element */}
+//       <div className="absolute top-0 right-0 w-1/3 h-full bg-[#0056b3]/[0.02] -skew-x-12 translate-x-1/2"></div>
+
+//       <div className="max-w-[1440px] mx-auto px-6 lg:px-20 relative z-10">
+//         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+          
+//           {/* --- LEFT: TEXT CONTENT --- */}
+//           <div className="lg:col-span-5 order-2 lg:order-1 space-y-12">
+//             <div className="space-y-6">
+//               <div className="inline-flex items-center gap-3 py-2 px-4 bg-white rounded-full shadow-sm border border-slate-100">
+//                 <span className="relative flex h-2 w-2">
+//                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0056b3] opacity-75"></span>
+//                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0056b3]"></span>
+//                 </span>
+//                 <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-500">The Experience Center</span>
+//               </div>
+              
+//               <h2 className="text-5xl md:text-7xl font-serif italic leading-[1.1] text-slate-900 tracking-tight">
+//                 Touch, Feel <br /> 
+//                 <span className="not-italic font-bold text-[#0056b3]">Experience.</span>
+//               </h2>
+              
+//               <p className="text-lg md:text-xl text-slate-500 font-light leading-relaxed">
+//                 Step into a world where engineering meets lifestyle. Our Velachery flagship store isn't a showroom—it's a playground for <span className="text-slate-900 font-medium">innovation</span>.
+//               </p>
+//             </div>
+
+//             {/* Feature Cards (Stacked on mobile, 2x2 on desktop) */}
+//             <div className="grid sm:grid-cols-2 gap-8 pt-4">
+//               {features.map((item, i) => (
+//                 <div key={i} className="group flex flex-col gap-2">
+//                   <div className="w-8 h-[2px] bg-slate-200 group-hover:w-full group-hover:bg-[#0056b3] transition-all duration-700"></div>
+//                   <h4 className="text-[11px] uppercase tracking-widest font-black text-slate-900">{item.title}</h4>
+//                   <p className="text-sm text-slate-400 font-light">{item.desc}</p>
+//                 </div>
+//               ))}
+//             </div>
+
+//             {/* Action Group */}
+//             <div className="flex flex-wrap items-center gap-8 pt-6">
+//               <a 
+//                 href="https://maps.google.com" 
+//                 target="_blank" 
+//                 rel="noreferrer"
+//                 className="group flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-[#0056b3]"
+//               >
+//                 <div className="p-3 bg-white shadow-md rounded-full group-hover:bg-[#0056b3] group-hover:text-white transition-all">
+//                   <MapPin size={18} />
+//                 </div>
+//                 Velachery, Chennai
+//               </a>
+              
+//               <Link to="/contact-visit" className="text-sm font-bold uppercase tracking-widest border-b-2 border-slate-900 pb-1 hover:text-[#0056b3] hover:border-[#0056b3] transition-all">
+//                 Get Directions
+//               </Link>
+//             </div>
+//           </div>
+
+//           {/* --- RIGHT: VISUAL ELEMENT --- */}
+//           <div className="lg:col-span-7 order-1 lg:order-2">
+//             <div className="relative aspect-[4/5] md:aspect-video lg:aspect-square group">
+              
+//               {/* Floating Engineering Label */}
+//               <div className="absolute -top-6 -right-6 z-20 hidden md:block py-6 px-8 bg-white shadow-2xl border border-slate-100 animate-bounce">
+//                  <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400">Precision Grade</p>
+//                  <p className="text-xl font-serif italic text-[#0056b3]">Showroom 01</p>
+//               </div>
+
+//               {/* Background Offset Box */}
+//               <div className="absolute inset-0 border border-[#0056b3]/20 translate-x-6 translate-y-6 lg:translate-x-12 lg:translate-y-12 transition-transform duration-700 group-hover:translate-x-0 group-hover:translate-y-0"></div>
+
+//               {/* Main Image Frame */}
+//               <div className="relative w-full h-full overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] bg-slate-200">
+//                 <img 
+//                   src={VelacheryShowroomImg} 
+//                   alt="Showroom" 
+//                   className="w-full h-full object-cover transition-transform duration-[4s] scale-110 group-hover:scale-100"
+//                 />
+                
+//                 {/* Overlay with subtle tint */}
+//                 <div className="absolute inset-0 bg-[#0056b3]/10 mix-blend-overlay group-hover:opacity-0 transition-opacity"></div>
+                
+//                 {/* Center Play Button (Visual only) */}
+//                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+//                   <div className="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center">
+//                     <PlayCircle className="text-white" size={40} />
+//                   </div>
+//                 </div>
+
+//                 {/* Bottom Bar Details */}
+//                 <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/60 to-transparent flex justify-between items-end">
+//                   <div className="text-white">
+//                     <p className="text-[10px] uppercase tracking-[0.3em] font-bold opacity-70">Location</p>
+//                     <p className="text-lg font-serif italic">100ft Bypass Road</p>
+//                   </div>
+//                   <Link to="/contact-visit" className="w-14 h-14 bg-white rounded-full flex items-center justify-center hover:bg-[#0056b3] hover:text-white transition-all shadow-xl">
+//                     <ArrowUpRight size={24} />
+//                   </Link>
+//                 </div>
+//               </div>
+
+//             </div>
+//           </div>
+
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, ArrowUpRight, PlayCircle } from 'lucide-react';
-// Replace with your actual showroom path
-import VelacheryShowroomImg from '../../assets/logo.webp'; 
+import { MapPin, ArrowUpRight } from 'lucide-react';
 
 export default function AboutFlagship() {
   const features = [
@@ -323,7 +448,7 @@ export default function AboutFlagship() {
               </p>
             </div>
 
-            {/* Feature Cards (Stacked on mobile, 2x2 on desktop) */}
+            {/* Feature Cards */}
             <div className="grid sm:grid-cols-2 gap-8 pt-4">
               {features.map((item, i) => (
                 <div key={i} className="group flex flex-col gap-2">
@@ -354,12 +479,12 @@ export default function AboutFlagship() {
             </div>
           </div>
 
-          {/* --- RIGHT: VISUAL ELEMENT --- */}
+          {/* --- RIGHT: VIDEO ELEMENT --- */}
           <div className="lg:col-span-7 order-1 lg:order-2">
             <div className="relative aspect-[4/5] md:aspect-video lg:aspect-square group">
               
               {/* Floating Engineering Label */}
-              <div className="absolute -top-6 -right-6 z-20 hidden md:block py-6 px-8 bg-white shadow-2xl border border-slate-100 animate-bounce">
+              <div className="absolute -top-6 -right-6 z-20 hidden md:block py-6 px-8 bg-white shadow-2xl border border-slate-100 transform group-hover:-translate-y-2 transition-transform duration-500">
                  <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400">Precision Grade</p>
                  <p className="text-xl font-serif italic text-[#0056b3]">Showroom 01</p>
               </div>
@@ -367,26 +492,22 @@ export default function AboutFlagship() {
               {/* Background Offset Box */}
               <div className="absolute inset-0 border border-[#0056b3]/20 translate-x-6 translate-y-6 lg:translate-x-12 lg:translate-y-12 transition-transform duration-700 group-hover:translate-x-0 group-hover:translate-y-0"></div>
 
-              {/* Main Image Frame */}
-              <div className="relative w-full h-full overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] bg-slate-200">
-                <img 
-                  src={VelacheryShowroomImg} 
-                  alt="Showroom" 
-                  className="w-full h-full object-cover transition-transform duration-[4s] scale-110 group-hover:scale-100"
+              {/* Video Frame */}
+              <div className="relative w-full h-full overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] bg-black rounded-sm">
+                <video 
+                  src="https://res.cloudinary.com/dsa0chszi/video/upload/v1774425406/Upgrade_your_home._Upgrade_your_lifestyle.__It_s_time_to_buy_smarter__better_home_appliances.__Visit_KHL_Home_Connect_-_Bosch_Brand_Store___Velachery_toda_1_tis0u8.mp4" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-full object-cover transition-transform duration-[4s] scale-110 group-hover:scale-100 brightness-[0.9] group-hover:brightness-100"
                 />
                 
-                {/* Overlay with subtle tint */}
-                <div className="absolute inset-0 bg-[#0056b3]/10 mix-blend-overlay group-hover:opacity-0 transition-opacity"></div>
+                {/* Subtle Overlay Tint */}
+                <div className="absolute inset-0 bg-[#0056b3]/5 mix-blend-overlay group-hover:opacity-0 transition-opacity"></div>
                 
-                {/* Center Play Button (Visual only) */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center">
-                    <PlayCircle className="text-white" size={40} />
-                  </div>
-                </div>
-
                 {/* Bottom Bar Details */}
-                <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/60 to-transparent flex justify-between items-end">
+                <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex justify-between items-end">
                   <div className="text-white">
                     <p className="text-[10px] uppercase tracking-[0.3em] font-bold opacity-70">Location</p>
                     <p className="text-lg font-serif italic">100ft Bypass Road</p>

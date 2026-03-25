@@ -70,29 +70,120 @@
 //   );
 // }
 
+// import React from 'react';
+// // Import your assets
+// import hero from "../../assets/logo.webp";
+// import logo from "../../assets/logo.webp";
+
+// export default function AboutLeadership() {
+//   const leaders = [
+//     { 
+//       name: "Mr. Mayilvaganan Thanikavelu", 
+//       role: "Chairman & Director", 
+//       desc: "Provides strategic direction and brings strong industry experience in real estate and construction.",
+//       image: hero 
+//     },
+//     { 
+//       name: "Mr. Ramesh EK", 
+//       role: "Director & Founding Promoter", 
+//       desc: "Drives operations, expansion, and brand growth across South Chennai.",
+//       image: logo 
+//     }
+//   ];
+
+//   return (
+//     <section className=" md:py-24 bg-white">
+//       <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
+        
+//         {/* --- Section Header --- */}
+//         <div className="flex flex-col items-center mb-16 md:mb-24 space-y-4">
+//           <div className="w-12 h-px bg-[#0056b3]"></div>
+//           <h2 className="text-[10px] md:text-[12px] uppercase tracking-[0.8em] font-black text-[#0056b3] text-center">
+//             The Leadership
+//           </h2>
+//         </div>
+
+//         {/* --- Leaders Grid --- */}
+//         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+//           {leaders.map((leader, i) => (
+//             <div key={i} className="group relative">
+              
+//               {/* ⬇️ REDUCED HEIGHT: Changed aspect-[4/5] to aspect-[3/2] */}
+//               <div className="relative aspect-[3/2] overflow-hidden mb-8 shadow-xl border border-slate-100">
+//                 {/* Background Decor Label */}
+//                 <div className="absolute top-4 right-4 z-10 hidden lg:block">
+//                    <span className="text-[9px] text-white/40 uppercase tracking-[0.4em] font-bold mix-blend-difference">
+//                      KHL_MGMT
+//                    </span>
+//                 </div>
+
+//                 {leader.image ? (
+//                   <img 
+//                     src={leader.image} 
+//                     alt={leader.name} 
+//                     /* object-top ensures faces are visible despite shorter height */
+//                     className="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 transition-all duration-[1.5s] group-hover:scale-105"
+//                   />
+//                 ) : (
+//                   <div className="w-full h-full bg-slate-50 flex items-center justify-center">
+//                     <span className="text-2xl font-serif italic text-slate-200">KHL</span>
+//                   </div>
+//                 )}
+
+//                 {/* Hover Reveal Tint */}
+//                 <div className="absolute inset-0 bg-[#0056b3]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                
+//                 {/* Bottom Edge Accent */}
+//                 <div className="absolute bottom-0 left-0 w-full h-1 bg-[#0056b3] scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+//               </div>
+
+//               {/* Text Content */}
+//               <div className="space-y-4 relative">
+//                 <div className="space-y-1">
+//                    <p className="text-[10px] md:text-[11px] uppercase tracking-[0.3em] text-[#0056b3] font-black">
+//                      {leader.role}
+//                    </p>
+//                    <h4 className="text-2xl md:text-3xl font-serif italic text-slate-900 tracking-tighter leading-none">
+//                      {leader.name}
+//                    </h4>
+//                 </div>
+
+//                 {/* Thin animated divider */}
+//                 <div className="w-12 h-px bg-slate-200 group-hover:w-24 group-hover:bg-[#0056b3] transition-all duration-700"></div>
+
+//                 <p className="text-sm md:text-base text-slate-500 font-light leading-relaxed max-w-md">
+//                   {leader.desc}
+//                 </p>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+
+//       </div>
+//     </section>
+//   );
+// }
+
 import React from 'react';
-// Import your assets
-import hero from "../../assets/logo.webp";
-import logo from "../../assets/logo.webp";
 
 export default function AboutLeadership() {
   const leaders = [
     { 
       name: "Mr. Mayilvaganan Thanikavelu", 
       role: "Chairman & Director", 
-      desc: "Provides strategic direction and brings strong industry experience in real estate and construction.",
-      image: hero 
+      desc: "Provides strategic direction and brings strong industry experience in real estate and construction to KHL Home Connect.",
+      image: "https://res.cloudinary.com/dsa0chszi/image/upload/v1774425072/Graced_with_wisdom._Powered_by_inspiration.__An_incredible_day_at_the__learners_fy_event__where_our_KHL_Director_Thiru.__imayilvaganan_honoured_as_the_Chi_jm4l94.jpg" 
     },
     { 
       name: "Mr. Ramesh EK", 
       role: "Director & Founding Promoter", 
-      desc: "Drives operations, expansion, and brand growth across South Chennai.",
-      image: logo 
+      desc: "Drives operations, expansion, and brand growth across South Chennai, ensuring premium retail excellence.",
+      image: "https://res.cloudinary.com/dsa0chszi/image/upload/v1774425072/Graced_with_wisdom._Powered_by_inspiration.__An_incredible_day_at_the__learners_fy_event__where_our_KHL_Director_Thiru.__imayilvaganan_honoured_as_the_Ch_1_c0pk8x.jpg" 
     }
   ];
 
   return (
-    <section className="py-24 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
         
         {/* --- Section Header --- */}
@@ -108,32 +199,26 @@ export default function AboutLeadership() {
           {leaders.map((leader, i) => (
             <div key={i} className="group relative">
               
-              {/* ⬇️ REDUCED HEIGHT: Changed aspect-[4/5] to aspect-[3/2] */}
-              <div className="relative aspect-[3/2] overflow-hidden mb-8 shadow-xl border border-slate-100">
+              {/* Image Container with 3:2 Aspect Ratio */}
+              <div className="relative aspect-[3/2] overflow-hidden mb-8 shadow-xl border border-slate-100 bg-slate-50">
                 {/* Background Decor Label */}
                 <div className="absolute top-4 right-4 z-10 hidden lg:block">
-                   <span className="text-[9px] text-white/40 uppercase tracking-[0.4em] font-bold mix-blend-difference">
+                   <span className="text-[9px] text-white/60 uppercase tracking-[0.4em] font-bold mix-blend-difference">
                      KHL_MGMT
                    </span>
                 </div>
 
-                {leader.image ? (
-                  <img 
-                    src={leader.image} 
-                    alt={leader.name} 
-                    /* object-top ensures faces are visible despite shorter height */
-                    className="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 transition-all duration-[1.5s] group-hover:scale-105"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-slate-50 flex items-center justify-center">
-                    <span className="text-2xl font-serif italic text-slate-200">KHL</span>
-                  </div>
-                )}
+                <img 
+                  src={leader.image} 
+                  alt={leader.name} 
+                  /* object-top is kept to prioritize faces in the 3:2 crop */
+                  className="w-full h-full object-cover object-top grayscale-[0.3] group-hover:grayscale-0 transition-all duration-[1.5s] group-hover:scale-105"
+                />
 
                 {/* Hover Reveal Tint */}
                 <div className="absolute inset-0 bg-[#0056b3]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                 
-                {/* Bottom Edge Accent */}
+                {/* Animated Bottom Edge Accent */}
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-[#0056b3] scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
               </div>
 
@@ -148,7 +233,7 @@ export default function AboutLeadership() {
                    </h4>
                 </div>
 
-                {/* Thin animated divider */}
+                {/* Animated divider */}
                 <div className="w-12 h-px bg-slate-200 group-hover:w-24 group-hover:bg-[#0056b3] transition-all duration-700"></div>
 
                 <p className="text-sm md:text-base text-slate-500 font-light leading-relaxed max-w-md">
@@ -158,7 +243,6 @@ export default function AboutLeadership() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
