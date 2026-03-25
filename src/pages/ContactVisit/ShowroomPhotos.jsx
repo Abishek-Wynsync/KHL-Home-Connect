@@ -4,11 +4,19 @@ import { Maximize2, Camera } from "lucide-react";
 
 export default function ShowroomPhotos() {
   const images = [
-    { src: "/showroom1.png", label: "Premium Kitchen Suite" },
-    { src: "/showroom2.png", label: "Live Demo Zone" },
-    { src: "/showroom3.png", label: "Built-in Excellence" },
-  ];
-
+  { 
+    src: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774439630/showroom1_ijgm8y.png",
+    label: "Premium Kitchen Suite"
+  },
+  { 
+    src: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774439687/showroom2_wgibb2.png",
+    label: "Live Demo Zone"
+  },
+  { 
+    src: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774439767/showroom3_ihs8yd.png",
+    label: "Built-in Excellence"
+  }
+];
   return (
     <section className="py-20 px-6 bg-white font-serif">
       <div className="max-w-7xl mx-auto">

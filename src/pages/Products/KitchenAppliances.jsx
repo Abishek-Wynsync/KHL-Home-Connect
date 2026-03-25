@@ -1,24 +1,44 @@
 import React, { useState } from "react";
 
 // Standard Import Method for Images
-import builtin from "../../assets/built-in.jpg";
-import chimney from "../../assets/chimneyy.jpg";
-import dishwasher from "../../assets/dishwasher.jpg";
-import microwave from "../../assets/microwavee.jpg";
-import Hob from "../../assets/Hobs.jpg";
+
 
 export default function KitchenAppliances() {
   const [selectedAppliance, setSelectedAppliance] = useState(null);
-  
-
 
   const appliances = [
-    { name: "Built-in Ovens", id: "OVEN-X", image: builtin, desc: "Precision roasting and baking for professional home results." },
-    { name: "Hobs", id: "HOB-X", image: Hob, desc: "Advanced heating technology for ultimate culinary control." },
-    { name: "Chimneys", id: "CHIM-X", image: chimney, desc: "Powerful suction and elegant design for a smoke-free kitchen." },
-    { name: "Dishwashers", id: "DW-X", image: dishwasher, desc: "Energy-efficient cleaning with whisper-quiet operation." },
-    { name: "Microwaves", id: "MW-X", image: microwave, desc: "Fast, versatile, and sleek countertop or built-in solutions." },
+    { 
+      name: "Built-in Ovens", 
+      id: "OVEN-X", 
+      image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774441321/built-in_drioqp.jpg", 
+      desc: "Precision roasting and baking for professional home results." 
+    },
+    { 
+      name: "Hobs", 
+      id: "HOB-X", 
+      image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774441365/Hobs_s4rbrf.jpg", 
+      desc: "Advanced heating technology for ultimate culinary control." 
+    },
+    { 
+      name: "Chimneys", 
+      id: "CHIM-X", 
+      image: "https://res.cloudinary.com/your-cloud-name/image/upload/chimney.jpg", 
+      desc: "Powerful suction and elegant design for a smoke-free kitchen." 
+    },
+    { 
+      name: "Dishwashers", 
+      id: "DW-X", 
+      image: "https://res.cloudinary.com/your-cloud-name/image/upload/dishwasher.jpg", 
+      desc: "Energy-efficient cleaning with whisper-quiet operation." 
+    },
+    { 
+      name: "Microwaves", 
+      id: "MW-X", 
+      image: "https://res.cloudinary.com/your-cloud-name/image/upload/microwave.jpg", 
+      desc: "Fast, versatile, and sleek countertop or built-in solutions." 
+    }
   ];
+
 
   return (
     <section className="py-20 px-6 bg-[#fcfcfc] font-serif text-[#003B73]">

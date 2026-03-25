@@ -4,31 +4,30 @@ import { ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 // --- Image Imports ---
-import ovenImg from "../../assets/built-in-oven.jpg";
-import fridgeImg from "../../assets/fridge.jpg";
-import washerImg from "../../assets/washer.jpg";
-
 export default function FeaturedProducts() {
+
   const products = [
     { 
       id: 1, 
       name: "Series 8 AccentLine", 
       type: "Built-in Oven", 
-      image: ovenImg 
+      image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774440823/built-in-oven_biiham.jpg"
     },
     { 
       id: 2, 
       name: "HomeConnect Side-by-Side", 
       type: "Smart Cooling", 
-      image: fridgeImg 
+      image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774440787/fridgee_gnuxbh.jpg"
     },
     { 
       id: 3, 
       name: "i-DOS Intelligent Care", 
       type: "Washing System", 
-      image: washerImg 
+      image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774440974/washer_kqt6tn.jpg"
     }
   ];
+
+
 
   return (
     <section className="py-24 bg-white px-6 font-serif relative overflow-hidden">

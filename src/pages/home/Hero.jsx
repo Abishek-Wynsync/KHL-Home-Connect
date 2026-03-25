@@ -47,7 +47,7 @@ export default function Hero() {
           className="w-full h-full object-cover opacity-60"
         >
           <source
-            src="https://res.cloudinary.com/dsa0chszi/video/upload/v1774338498/ServicePromo1_jgrnlu.mp4"
+            src="https://res.cloudinary.com/dapj1nuzz/video/upload/v1774442196/Bosch_Kitchen_Appliances_-_Designed_to_Perform_Beautifully_ciqs2f.mp4"
             type="video/mp4"
           />
         </video>

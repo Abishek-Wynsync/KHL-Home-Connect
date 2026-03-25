@@ -10,22 +10,46 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 
-// Image imports remain the same
-import washingImg from "../../assets/washing.jpg";
-import fridgeImg from "../../assets/fridge.jpg";
-import dishwasherImg from "../../assets/dishwasher.jpg";
-import builtinImg from "../../assets/builtin.jpg";
-import chimneyImg from "../../assets/chimney.jpg";
-import microwaveImg from "../../assets/microwave.jpg";
+
 
 export default function Categories() {
 const categories = [
-  { name: "Washing Machines", image: washingImg, tag: "Laundry", link: "/products#laundry" },
-  { name: "Refrigerators", image: fridgeImg, tag: "Cooling", link: "/products#cooling" },
-  { name: "Dishwashers", image: dishwasherImg, tag: "Cleaning", link: "/products#kitchen" },
-  { name: "Built-in Appliances", image: builtinImg, tag: "Kitchen", link: "/products#kitchen" },
-  { name: "Chimneys & Hobs", image: chimneyImg, tag: "Cooking", link: "/products#kitchen" },
-  { name: "Microwave Ovens", image: microwaveImg, tag: "Heating", link: "/products#small" },
+  {
+    name: "Washing Machines",
+    image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774440212/washing_a86qqx.jpg",
+    tag: "Laundry",
+    link: "/products#laundry",
+  },
+  {
+    name: "Refrigerators",
+    image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774440252/fridge_e1gbrk.jpg",
+    tag: "Cooling",
+    link: "/products#cooling",
+  },
+  {
+    name: "Dishwashers",
+    image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774440338/dishwasher_evngk3.jpg",
+    tag: "Cleaning",
+    link: "/products#kitchen",
+  },
+  {
+    name: "Built-in Appliances",
+    image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774440385/builtin_esxgwi.jpg",
+    tag: "Kitchen",
+    link: "/products#kitchen",
+  },
+  {
+    name: "Chimneys & Hobs",
+    image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774440424/chimney_k28mvm.jpg",
+    tag: "Cooking",
+    link: "/products#kitchen",
+  },
+  {
+    name: "Microwave Ovens",
+    image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774440458/microwave_pojow2.jpg",
+    tag: "Heating",
+    link: "/products#small",
+  },
 ];
 
   return (
