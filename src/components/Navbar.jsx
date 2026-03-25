@@ -328,7 +328,7 @@ export default function Navbar() {
     { name: "Products", path: "/products" },
     { name: "Technologies", path: "/technologies" },
     { name: "Support", path: "/experience-support" },
-    { name: "Visit Us", path: "/visit-us" },
+    { name: "ContactVisit", path: "/ContactVisit" },
   ];
 
   return (
@@ -384,11 +384,11 @@ export default function Navbar() {
         {/* Action Buttons */}
         <div className="flex items-center gap-4">
           <Link
-            to="/contact-visit"
-            className="hidden lg:block px-8 py-3 bg-brand-blue text-white text-[10px] uppercase tracking-[0.25em] font-bold hover:bg-brand-dark transition-all shadow-md"
-          >
-            Enquire Now
-          </Link>
+  to="/ContactVisit#enquiry"
+  className="hidden lg:inline-flex items-center justify-center px-8 py-3 bg-brand-blue text-white text-[10px] uppercase tracking-[0.25em] font-bold rounded-md shadow-md transition-all duration-300 hover:bg-brand-dark hover:shadow-lg active:scale-95"
+>
+  Enquire Now
+</Link>
 
           {/* Mobile Toggle */}
           <button 
@@ -418,7 +418,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link
-            to="/contact-visit"
+            to="/ContactVisit#enquiry"
             className="mt-4 px-10 py-4 bg-brand-blue text-white text-xs uppercase tracking-widest font-bold"
           >
             Enquire Now

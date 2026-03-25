@@ -6,8 +6,8 @@ import heroVideo from "../../assets/hero-video.mp4";
 export default function ProductsHero() {
   return (
     
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden font-serif bg-[#001b35]">
-      
+    
+   <section className="relative min-h-screen flex items-center justify-center overflow-hidden font-serif bg-[#001b35]">
       {/* --- Background Video Layer --- */}
       <div className="absolute inset-0 z-0">
         <video

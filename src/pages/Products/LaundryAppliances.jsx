@@ -47,7 +47,7 @@ export default function LaundryAppliances() {
           </div>
 
           {/* --- Grid --- */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12">
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pb-12">
             {appliances.map((item, index) => (
               <div 
                 key={index} 
@@ -55,13 +55,13 @@ export default function LaundryAppliances() {
                 onClick={() => setSelectedAppliance(item)}
               >
                 <div className="relative z-10 p-8 rounded-[2rem] bg-white border border-slate-200 shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-                  <div className="aspect-square mb-8 flex items-center justify-center">
-                   <img 
-  src={item.image} 
-  alt={item.name} 
-  className="w-110 h-110 object-cover rounded-2xl group-hover:scale-100 transition-transform duration-700" 
-/>
-                  </div>
+                  <div className="aspect-[4/5] mb-6 overflow-hidden rounded-2xl">
+  <img 
+    src={item.image} 
+    alt={item.name} 
+    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+  />
+</div>
                   <div className="text-center">
                     <p className="text-[10px] font-bold tracking-[0.3em] text-blue-500 uppercase mb-2">{item.series}</p>
                     <h3 className="text-2xl font-bold">{item.name}</h3>

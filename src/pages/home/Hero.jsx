@@ -19,7 +19,7 @@ export default function Hero() {
 
   // Navigate to Visit Us → Enquiry
   const handleBookDemo = () => {
-    navigate("/visit-us");
+    navigate("/ContactVisit");
 
     setTimeout(() => {
       const section = document.getElementById("enquiry");
@@ -47,7 +47,7 @@ export default function Hero() {
           className="w-full h-full object-cover opacity-60"
         >
           <source
-            src="https://res.cloudinary.com/dxwotbb5s/video/upload/v1774426682/video.mp4"
+            src="https://res.cloudinary.com/dsa0chszi/video/upload/v1774338498/ServicePromo1_jgrnlu.mp4"
             type="video/mp4"
           />
         </video>

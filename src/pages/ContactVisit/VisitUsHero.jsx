@@ -5,7 +5,7 @@ import visitVideo from "../../assets/hero-video.mp4"; // Update your video path
 
 export default function VisitUsHero() {
   return (
-    <section id="visit-hero" className="relative h-[85vh] flex items-center justify-center overflow-hidden font-serif bg-[#001b35]">
+    <section id="visit-hero" className="relative h-[100vh] flex items-center justify-center overflow-hidden font-serif bg-[#001b35]">
 
       {/* --- Background Video --- */}
       <div className="absolute inset-0 z-0">

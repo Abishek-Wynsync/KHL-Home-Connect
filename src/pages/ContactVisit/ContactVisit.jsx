@@ -40,7 +40,9 @@ export default function ContactVisit() {
       <VisitUsHero />
       <ShowroomPhotos />
       <StoreDetails />
+      <div id="enquiry">
       <AppointmentBooking />
+      </div>
       <ContactInfo />
       <EnquiryForm />
       <BusinessHours />
