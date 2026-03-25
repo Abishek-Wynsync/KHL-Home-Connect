@@ -22,19 +22,19 @@ export default function KitchenAppliances() {
     { 
       name: "Chimneys", 
       id: "CHIM-X", 
-      image: "https://res.cloudinary.com/your-cloud-name/image/upload/chimney.jpg", 
+      image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774443225/chimneyyy_yily7d.jpg", 
       desc: "Powerful suction and elegant design for a smoke-free kitchen." 
     },
     { 
       name: "Dishwashers", 
       id: "DW-X", 
-      image: "https://res.cloudinary.com/your-cloud-name/image/upload/dishwasher.jpg", 
+      image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774443276/dishwasherr_zummfb.jpg", 
       desc: "Energy-efficient cleaning with whisper-quiet operation." 
     },
     { 
       name: "Microwaves", 
       id: "MW-X", 
-      image: "https://res.cloudinary.com/your-cloud-name/image/upload/microwave.jpg", 
+      image: "https://res.cloudinary.com/dapj1nuzz/image/upload/v1774443314/microwavee_lckdhh.jpg", 
       desc: "Fast, versatile, and sleek countertop or built-in solutions." 
     }
   ];
