@@ -40,7 +40,7 @@ export default function Offers() {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm mb-8"
           >
             <ShieldCheck size={14} className="text-[#003B73]" />
-            <span className="text-[10px] font-sans font-black uppercase tracking-[0.3em] text-[#003B73]/70">
+            <span className="text-[10px] font-serif font-black uppercase tracking-[0.3em] text-[#003B73]/70">
               Limited Time Advantage
             </span>
           </motion.div>
@@ -104,7 +104,7 @@ export default function Offers() {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="mt-20 flex flex-col sm:flex-row justify-center items-center gap-8"
+          className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-8"
         >
           
         </motion.div>

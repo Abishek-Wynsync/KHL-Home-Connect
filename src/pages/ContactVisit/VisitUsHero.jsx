@@ -34,7 +34,7 @@ export default function VisitUsHero() {
           {/* Subtle Tagline */}
           <div className="flex items-center justify-center gap-3">
             <span className="h-[1px] w-10 bg-white/20"></span>
-            <span className="uppercase tracking-[0.4em] text-[11px] text-slate-300 font-bold font-sans">
+            <span className="uppercase tracking-[0.4em] text-[11px] text-slate-300 font-bold font-serif">
               Visit Our Showroom
             </span>
             <span className="h-[1px] w-10 bg-white/20"></span>

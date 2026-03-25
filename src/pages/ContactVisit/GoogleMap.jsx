@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function GoogleMap() {
   return (
-    <section className="py-12 px-2 font-serif bg-white">
+    <section className="py-20 px-2 font-serif bg-white">
       <div className="max-w-6xl mx-auto">
 
         {/* Header Section */}

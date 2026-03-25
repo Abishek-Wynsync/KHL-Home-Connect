@@ -41,7 +41,7 @@ export default function FeaturedProducts() {
         <div className="text-center mb-20">
           <div className="flex justify-center items-center gap-2 mb-4">
             <span className="h-[1px] w-10 bg-[#003B73]/20"></span>
-            <span className="text-[10px] uppercase tracking-[0.4em] font-sans font-black text-slate-400">Selected Innovations</span>
+            <span className="text-[10px] uppercase tracking-[0.4em] font-serif font-black text-slate-400">Selected Innovations</span>
             <span className="h-[1px] w-10 bg-[#003B73]/20"></span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-[#003B73] tracking-tight">
@@ -78,7 +78,7 @@ export default function FeaturedProducts() {
 
               {/* Info Container */}
               <div className="p-8">
-                <p className="text-[10px] font-sans font-black uppercase tracking-[0.2em] text-blue-500 mb-2">
+                <p className="text-[10px] font-serif font-black uppercase tracking-[0.2em] text-blue-500 mb-2">
                   {item.type}
                 </p>
                 <h3 className="text-2xl font-bold text-[#003B73] mb-4 group-hover:text-blue-600 transition-colors">
@@ -99,11 +99,10 @@ export default function FeaturedProducts() {
           ))}
         </div>
 
-        {/* --- View All Footer --- */}
-        <div className="mt-20 text-center">
+  
           
         </div>
-      </div>
+      
     </section>
   );
 }

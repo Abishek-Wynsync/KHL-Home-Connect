@@ -21,7 +21,7 @@ export default function About() {
   ];
 
   return (
-     <section className="flex-grow py-10 px-6 bg-[#f5f7fa] border-y border-gray-100 font-serif text-[#003B73] relative">
+     <section className="flex-grow py-20 px-6 bg-[#f5f7fa] border-y border-gray-100 font-serif text-[#003B73] relative">
       {/* Background Accent: Using the Deep Blue from the logo in a subtle gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(#1e3a8a_0.5px,transparent_0.5px)] [background-size:24px_24px] opacity-[0.15]"></div>
 

@@ -28,7 +28,7 @@ export default function ContactInfo() {
   ];
 
   return (  
-    <section className="flex-grow py-10 px-6 bg-[#f5f7fa] border-y border-gray-100 font-serif text-[#003B73] relative">
+    <section className="flex-grow py-20 px-6 bg-[#f5f7fa] border-y border-gray-100 font-serif text-[#003B73] relative">
       <div className="max-w-md mx-auto">
         
         {/* Header with Serif Styling */}

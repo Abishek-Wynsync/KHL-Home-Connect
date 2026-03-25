@@ -25,7 +25,7 @@ export default function CTA() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#003B73] opacity-20"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#003B73]"></span>
           </span>
-          <span className="text-[10px] font-sans font-bold uppercase tracking-[0.3em] text-[#003B73]/70">
+          <span className="text-[10px] font-serif font-bold uppercase tracking-[0.3em] text-[#003B73]/70">
             Open All Week • 10AM - 9PM
           </span>
         </motion.div>
@@ -35,7 +35,7 @@ export default function CTA() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-5xl md:text-7xl font-bold tracking-tight text-[#003B73] mb-6 leading-[1.1]"
+          className="text-5xl md:text-7xl font-serif tracking-tight text-[#003B73] mb-6 leading-[1.1]"
         >
           Experience the <br />
           <span className="italic font-light text-slate-400">Future of Living.</span>
@@ -66,7 +66,7 @@ export default function CTA() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-16 text-xs font-sans font-bold uppercase tracking-widest text-slate-400 flex items-center justify-center gap-3"
+          className="mt-2 text-xs font-serif font-bold uppercase tracking-widest text-slate-400 flex items-center justify-center gap-3"
         >
           <MessageSquare size={14} className="text-[#003B73]/40" />
           <span>Can't visit?</span>

@@ -21,12 +21,12 @@ export default function KitchenAppliances() {
   ];
 
   return (
-    <section className="py-35 px-6 bg-[#fcfcfc] font-serif text-[#003B73]">
+    <section className="py-20 px-6 bg-[#fcfcfc] font-serif text-[#003B73]">
       <div className="max-w-7xl mx-auto">
         
         {/* --- Header Section --- */}
         <div className="text-center mb-24 relative">
-          <span className="block text-sm uppercase tracking-[0.4em] text-slate-400 mb-4 font-sans font-bold">Culinary Excellence</span>
+          <span className="block text-sm uppercase tracking-[0.4em] text-slate-400 mb-4 font-serif font-bold">Culinary Excellence</span>
           <h2 className="text-5xl md:text-6xl font-black mb-6 tracking-tight">
             Kitchen Appliances
           </h2>
@@ -55,7 +55,7 @@ export default function KitchenAppliances() {
 
                 {/* Quick View Overlay */}
                 <div className="absolute inset-0 bg-[#003B73]/10 opacity-0 group-hover:opacity-100 transition-opacity z-20 flex items-center justify-center">
-                  <div className="bg-white/95 backdrop-blur-md px-8 py-3 rounded-full shadow-2xl transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500 text-[10px] font-bold tracking-[0.2em] font-sans">
+                  <div className="bg-white/95 backdrop-blur-md px-8 py-3 rounded-full shadow-2xl transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500 text-[10px] font-bold tracking-[0.2em] font-serif">
                     PREVIEW DESIGN
                   </div>
                 </div>
@@ -63,13 +63,13 @@ export default function KitchenAppliances() {
                 <img 
                   src={item.image} 
                   alt={item.name} 
-                  className="w-full h-full object-contain p-10 transition-transform duration-[1.5s] ease-out group-hover:scale-110"
+                  className="w-full h-full object-contain p-10 rounded-2xl transition-transform duration-[1.5s] ease-out group-hover:scale-110"
                 />
               </div>
 
               {/* Info Area */}
               <div className="mt-8 px-6 text-center">
-                <span className="text-[10px] tracking-[0.3em] text-slate-400 font-sans font-bold uppercase block mb-2">
+                <span className="text-[10px] tracking-[0.3em] text-slate-400 font-serif font-bold uppercase block mb-2">
                   Modern Collection
                 </span>
                 <h3 className="text-2xl font-bold mb-3 tracking-tight group-hover:text-blue-600 transition-colors">
@@ -85,7 +85,7 @@ export default function KitchenAppliances() {
       {/* --- Interactive Preview Modal --- */}
       {selectedAppliance && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-[#001529]/95 backdrop-blur-md p-4 animate-in fade-in duration-300"
+        className="fixed inset-0 z-50 flex items-center justify-center bg-[#001529]/95 backdrop-blur-md pt-20 p-4 animate-in fade-in duration-300"
           onClick={() => setSelectedAppliance(null)}
         >
           <div 
@@ -105,13 +105,13 @@ export default function KitchenAppliances() {
               <img 
                 src={selectedAppliance.image} 
                 alt={selectedAppliance.name} 
-                className="max-h-[50vh] object-contain drop-shadow-2xl"
+                className="max-h-[50vh] object-cover drop-shadow-2xl rounded-2xl filter"
               />
             </div>
 
             {/* Modal Details */}
             <div className="w-full md:w-1/2 p-12 lg:p-16 flex flex-col justify-center">
-              <span className="text-blue-500 font-sans font-black text-xs tracking-widest uppercase mb-4">
+              <span className="text-blue-500 font- font-black text-xs tracking-widest uppercase mb-4">
                 Professional Series
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
@@ -123,11 +123,11 @@ export default function KitchenAppliances() {
               
               <div className="grid grid-cols-2 gap-6 mb-10">
                 <div className="border-l-2 border-blue-100 pl-4">
-                  <p className="text-[10px] uppercase tracking-widest text-slate-400 font-sans font-bold">Standard</p>
+                  <p className="text-[10px] uppercase tracking-widest text-slate-400 font-serif font-bold">Standard</p>
                   <p className="font-bold">Eco-Flow Tech</p>
                 </div>
                 <div className="border-l-2 border-blue-100 pl-4">
-                  <p className="text-[10px] uppercase tracking-widest text-slate-400 font-sans font-bold">Warranty</p>
+                  <p className="text-[10px] uppercase tracking-widest text-slate-400 font-serif font-bold">Warranty</p>
                   <p className="font-bold">10 Year Motor</p>
                 </div>
               </div>

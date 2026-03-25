@@ -31,7 +31,7 @@ export default function LaundryAppliances() {
   return (
     /* Added min-h-screen and flex-col to prevent footer overlap */
     <div className="min-h-screen flex flex-col bg-[#f8fafc]">
-      <section className="flex-grow py-10 px-6 bg-[#f5f7fa] border-y border-gray-100 font-serif text-[#003B73] relative">
+      <section className="flex-grow py-20 px-6 bg-[#f5f7fa] border-y border-gray-100 font-serif text-[#003B73] relative">
       
         <div className="max-w-7xl mx-auto">
           
@@ -56,7 +56,11 @@ export default function LaundryAppliances() {
               >
                 <div className="relative z-10 p-8 rounded-[2rem] bg-white border border-slate-200 shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                   <div className="aspect-square mb-8 flex items-center justify-center">
-                    <img src={item.image} alt={item.name} className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" />
+                   <img 
+  src={item.image} 
+  alt={item.name} 
+  className="w-110 h-110 object-cover rounded-2xl group-hover:scale-100 transition-transform duration-700" 
+/>
                   </div>
                   <div className="text-center">
                     <p className="text-[10px] font-bold tracking-[0.3em] text-blue-500 uppercase mb-2">{item.series}</p>
@@ -89,9 +93,13 @@ export default function LaundryAppliances() {
               </button>
 
               {/* Image Side */}
-              <div className="w-full md:w-1/2 bg-slate-50 p-12 flex items-center justify-center">
-                <img src={selectedAppliance.image} className="max-h-[50vh] object-contain drop-shadow-2xl" alt="" />
-              </div>
+<div className="w-full md:w-1/2 bg-slate-50 p-12 flex items-center justify-center">
+ <img
+  src={selectedAppliance.image}
+  className="max-h-[50vh] object-cover drop-shadow-2xl rounded-2xl filter"
+  alt=""
+/>
+</div>
 
               {/* Content Side */}
               <div className="w-full md:w-1/2 p-10 lg:p-16 flex flex-col justify-center">
@@ -116,12 +124,7 @@ export default function LaundryAppliances() {
         )}
       </section>
 
-      {/* --- Footer Placeholder (Apply your footer here) --- */}
-      <footer className="bg-white border-t border-slate-100 py-12 px-6 mt-auto">
-        <div className="max-w-7xl mx-auto text-center text-slate-400 text-sm">
-          © 2026 KHL Home Connect. All Rights Reserved.
-        </div>
-      </footer>
+     
     </div>
   );
 }

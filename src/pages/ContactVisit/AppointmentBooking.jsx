@@ -12,7 +12,7 @@ export default function AppointmentBooking() {
   };
 
   return (
-    <section id="enquiry" className="p-8 md:p-10 bg-white rounded-[2.5rem] relative overflow-hidden font-serif">
+    <section id="enquiry" className="p-20 md:p-10 bg-white rounded-[2.5rem] relative overflow-hidden font-serif">
       
       {/* Success Overlay - Logo Blue */}
       <AnimatePresence>

@@ -26,7 +26,7 @@ export default function WhyBosch() {
   ];
 
   return (
-     <section className="flex-grow py-10 px-6 bg-[#f5f7fa] border-y border-gray-100 font-serif text-[#003B73] relative">
+     <section className="flex-grow py-20 px-6 bg-[#f5f7fa] border-y border-gray-100 font-serif text-[#003B73] relative">
       {/* Background Accent: Subtle Logo Blue Glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0a4275]/5 blur-[120px] rounded-full pointer-events-none"></div>
 

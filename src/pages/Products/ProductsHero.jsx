@@ -35,7 +35,7 @@ export default function ProductsHero() {
           {/* Top Label */}
           <div className="flex items-center justify-center gap-3">
             <span className="h-[1px] w-10 bg-white/10"></span>
-            <span className="uppercase tracking-[0.4em] text-[10px] text-slate-400 font-bold font-sans">
+            <span className="uppercase tracking-[0.4em] text-[10px] text-slate-400 font-bold font-serif">
               Authorized Bosch Dealer
             </span>
             <span className="h-[1px] w-10 bg-white/10"></span>

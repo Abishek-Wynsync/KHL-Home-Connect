@@ -24,7 +24,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="relative py-32 bg-[#fcfdfe] overflow-hidden">
+    <section className="relative py-20 bg-[#fcfdfe] overflow-hidden">
       {/* Background Decorative Text in Logo Silver/Gray */}
       <div className="absolute top-10 left-10 text-[12rem] font- serif text-slate-100 select-none pointer-events-none hidden lg:block uppercase tracking-tighter">
         Elite
@@ -118,7 +118,7 @@ export default function Testimonials() {
         </div>
 
         {/* Bottom Verification Text */}
-        <div className="mt-20 text-center">
+        <div className="mt-10 text-center">
         
         </div>
       </div>
