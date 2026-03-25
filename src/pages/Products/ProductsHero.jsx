@@ -1,7 +1,7 @@
 import React from "react";
 import { ChevronRight, Play } from "lucide-react";
 import { motion } from "framer-motion";
-import heroVideo from "../../assets/hero-video.mp4"; 
+ 
 
 export default function ProductsHero() {
   return (
@@ -17,8 +17,11 @@ export default function ProductsHero() {
           playsInline
           className="w-full h-full object-cover opacity-60" // Reduced opacity here also helps control "glow"
         >
-          <source src={heroVideo} type="video/mp4" />
-        </video>
+          <source 
+    src="https://res.cloudinary.com/dapj1nuzz/video/upload/v1774444485/The_Bosch_SENSORCHESTRA_-_Bosch_Global_720p_h264_nnin52.mp4" 
+    type="video/mp4" 
+  />
+</video>
         
         {/* Dark Neutral Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
