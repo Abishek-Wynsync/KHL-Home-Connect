@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { Helmet } from "react-helmet-async";
 import AboutHero from "../../components/about/AboutHero";
 import AboutWhoWeAre from "../../components/about/AboutWhoWeAre";
 import AboutBusiness from "../../components/about/AboutBusiness";
@@ -13,6 +15,35 @@ import AboutVideo from "../../components/about/AboutVideo";
 export default function About() {
   return (
     <div className="bg-white overflow-x-hidden">
+
+      <Helmet>
+        <title>About Bosch Home Appliances Velachery | Our Story & Operations</title>
+
+        <meta
+          name="description"
+          content="Learn about our Bosch Home Appliances flagship store in Velachery, Chennai. Discover our retail experience, enterprise supply solutions, leadership, and customer commitment."
+        />
+
+        <meta
+          name="keywords"
+          content="Bosch showroom Velachery, Bosch store Chennai, Bosch home appliances about, Bosch flagship store India"
+        />
+
+   
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Bosch Home Appliances Velachery" />
+        <meta
+          name="twitter:description"
+          content="Premium Bosch showroom in Velachery with live demonstrations and enterprise supply solutions."
+        />
+        <meta name="twitter:image" content="https://res.cloudinary.com/dapj1nuzz/image/upload/v1774506837/opengraph_vgzvxl.png" />
+
+        {/* Local SEO */}
+        <meta name="geo.region" content="IN-TN" />
+        <meta name="geo.placename" content="Velachery, Chennai" />
+      </Helmet>
       {/* 00. Hero Section (Keeps its own dark/cinematic styling) */}
       <AboutHero />
 

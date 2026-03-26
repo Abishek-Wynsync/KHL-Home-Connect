@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import ShowroomPhotos from "./ShowroomPhotos";
 import StoreDetails from "./StoreDetails";
@@ -27,7 +28,6 @@ export default function ContactVisit() {
         }, 300);
       }
     } else {
-      // When visiting /visit-us from navbar
       window.scrollTo({
         top: 0,
         behavior: "smooth",
@@ -37,12 +37,47 @@ export default function ContactVisit() {
 
   return (
     <div className="font-serif text-gray-800">
+
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>
+          Visit Bosch Showroom Velachery | Store Location, Contact & Appointments
+        </title>
+
+        <meta
+          name="description"
+          content="Visit our Bosch Home Appliances showroom in Velachery, Chennai. Get directions, book appointments, view showroom photos, and contact our team for expert assistance."
+        />
+
+        <meta
+          name="keywords"
+          content="Bosch showroom Velachery address, Bosch store Chennai contact, Bosch showroom near me, Bosch Velachery location"
+        />
+
+       
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Visit Bosch Showroom Velachery" />
+        <meta
+          name="twitter:description"
+          content="Plan your visit to our Bosch Experience Store in Velachery. Get directions, contact details, and book an appointment."
+        />
+        <meta name="twitter:image" content="https://res.cloudinary.com/dapj1nuzz/image/upload/v1774506837/opengraph_vgzvxl.png" />
+
+        {/* Local SEO */}
+        <meta name="geo.region" content="IN-TN" />
+        <meta name="geo.placename" content="Velachery, Chennai" />
+      </Helmet>
+
       <VisitUsHero />
       <ShowroomPhotos />
       <StoreDetails />
+
       <div id="enquiry">
-      <AppointmentBooking />
+        <AppointmentBooking />
       </div>
+
       <ContactInfo />
       <EnquiryForm />
       <BusinessHours />

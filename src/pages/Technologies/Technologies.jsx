@@ -180,23 +180,57 @@
 //     </div>
 //   );
 // }
+import { Helmet } from "react-helmet-async";
+
 import TechHero from "../../components/technologies/TechHero";
-import TechStats from "../../components/technologies/TechStats"; // New
+import TechStats from "../../components/technologies/TechStats";
 import TechList from "../../components/technologies/TechList";
-import TechVideoShowcase from "../../components/technologies/TechVideoShowcase"; // New
-import TechAppGrid from "../../components/technologies/TechAppGrid"; // New
+import TechVideoShowcase from "../../components/technologies/TechVideoShowcase";
+import TechAppGrid from "../../components/technologies/TechAppGrid";
 import TechCTA from "../../components/technologies/TechCTA";
 
 export default function Technologies() {
   return (
     <div className="bg-[#0a0a0a] text-white overflow-x-hidden">
+
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>
+          Bosch Appliance Technologies | Smart, Efficient & German Engineered
+        </title>
+
+        <meta
+          name="description"
+          content="Discover Bosch appliance technologies including Home Connect, energy-efficient motors, smart sensors, and advanced German engineering available at our Velachery showroom."
+        />
+
+        <meta
+          name="keywords"
+          content="Bosch technologies, Home Connect India, Bosch smart appliances, Bosch German engineering, Bosch inverter motor"
+        />
+
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bosch Smart Appliance Technologies" />
+        <meta
+          name="twitter:description"
+          content="Learn how Bosch integrates smart connectivity, precision engineering, and energy efficiency into every home appliance."
+        />
+        <meta name="twitter:image" content="https://res.cloudinary.com/dapj1nuzz/image/upload/v1774506837/opengraph_vgzvxl.png" />
+
+        {/* Local SEO */}
+        <meta name="geo.region" content="IN-TN" />
+        <meta name="geo.placename" content="Velachery, Chennai" />
+      </Helmet>
+
       <TechHero />
       <TechStats />
       <TechList />
       <TechVideoShowcase />
       <TechAppGrid />
       <TechCTA />
-      {/* ... styles */}
+
       <style jsx global>{`
         @keyframes scaleIn { from { opacity: 0; transform: scale(1.1); } to { opacity: 1; transform: scale(1); } }
         @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }

@@ -141,7 +141,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Layout Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
 // Pages
 import Home from "./pages/home/home";
 import About from "./pages/AboutUs/About";
