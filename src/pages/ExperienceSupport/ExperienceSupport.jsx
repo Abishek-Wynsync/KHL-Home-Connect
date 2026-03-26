@@ -233,11 +233,68 @@ import SupportServices from "../../components/support/SupportServices";
 import SupportTestimonials from "../../components/support/SupportTestimonials";
 import SupportFAQ from "../../components/support/SupportFAQ";
 import SupportCTA from "../../components/support/SupportCTA";
-
+import { Helmet } from "react-helmet-async";
 export default function ExperienceSupport() {
   return (
     /* pt-20 ensures content starts below fixed nav; overflow-x-hidden prevents animation "wobble" */
     <div className="bg-white overflow-x-hidden">
+      <Helmet>
+  {/* Title */}
+  <title>
+    Bosch Customer Support & Service Experience | Velachery Chennai
+  </title>
+
+  {/* SEO Description */}
+  <meta
+    name="description"
+    content="Experience premium Bosch customer support in Velachery, Chennai. Explore our service offerings, expert assistance, FAQs, and customer testimonials."
+  />
+
+  <meta
+    name="keywords"
+    content="Bosch customer support Chennai, Bosch service center Velachery, Bosch appliance service, Bosch after sales support"
+  />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Bosch Customer Support & Service Experience" />
+  <meta
+    property="og:description"
+    content="Discover Bosch’s premium customer support, expert service, and dedicated assistance for all home appliances in Velachery, Chennai."
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:url"
+    content="https://wynsynccc-homee-connecttt.netlify.app/support"
+  />
+  <meta
+    property="og:image"
+    content="https://res.cloudinary.com/dapj1nuzz/image/upload/v1774506837/opengraph_vgzvxl.png"
+  />
+  <meta
+    property="og:image:secure_url"
+    content="https://res.cloudinary.com/dapj1nuzz/image/upload/v1774506837/opengraph_vgzvxl.png"
+  />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="KHL Connect - Bosch Appliances Velachery" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bosch Customer Support & Service Experience" />
+  <meta
+    name="twitter:description"
+    content="Premium Bosch appliance support and service in Velachery, Chennai. Get expert help, service plans, and customer assistance."
+  />
+  <meta
+    name="twitter:image"
+    content="https://res.cloudinary.com/dapj1nuzz/image/upload/v1774506837/opengraph_vgzvxl.png"
+  />
+
+  {/* Local SEO */}
+  <meta name="geo.region" content="IN-TN" />
+  <meta name="geo.placename" content="Velachery, Chennai" />
+</Helmet>
       
       {/* 1. Optimized Global Animations */}
       <style dangerouslySetInnerHTML={{ __html: `
